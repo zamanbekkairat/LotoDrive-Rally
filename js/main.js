@@ -182,8 +182,8 @@ const onFail = (err) => {
 const getData = async(onSuccess, onFail, cb) => {
     try {
         const response = await fetch(
-            '../js/data.json'
-            //'https://sz.kz/srvNew?srv=lrRating&lotteryRace=38&offset=101'
+            //'../js/data.json'
+            'https://sz.kz/srvNew?srv=lrRating&lotteryRace=38&offset=101'
         );
 
         if (!response.ok) {
