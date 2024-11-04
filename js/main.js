@@ -610,7 +610,7 @@ reiting();
 
 setTimeout(() => {
     // дата завершения таймера 
-    const endTimeLotomania = 'Feb 29 2024, 20:00 GMT+0600';
+    const endTimeLotomania = 'Feb 29 2025, 20:00 GMT+0600';
 
     // приводим к стандартному виду 03:04:05, вместо 3:4:5
     function makeCorrectDate(uncorrectDate) {
