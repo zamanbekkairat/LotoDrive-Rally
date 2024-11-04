@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://static.sz.kz/landings/ExpressTest/css/nouislider.min.css?v7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="out-of-header">
+        <section class="welcome tabcontent1 active">
+            <div class="container">
+                <div class="visual">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="">
+                        <img src="https://static.sz.kz/landings/lotoDriveRetro/img/logo1.png" srcset="https://static.sz.kz/landings/lotoDriveRetro/img/logo1-2x.png 2x" alt="">
+                    </picture>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="welcome-block">
+                    <div class="welcome-text">
+                        <div class="welcome-text__block">
+                            <div class="fond">
+                                <p class="firstSpan">Жүлде қоры</p>
+                                <p class="allScore" id="out">2 000 000</p>
+                            </div>
+
+                            <div class="timerWrapper">
+                                <div class="timer__wrapper">
+                                    <p class="timerDo">Мәреге дейін:</p>
+                                    <div id="timerRetroDesk" class="timer timer-desk col">
+                                        <div class="timer-section timer-section-desk">
+                                            <div class="days-block">
+                                                <span class="daysRetro num num-desk">00</span>
+                                            </div>
+                                            <span class="uncorrectDaysRetro text_num text_num-desk">к.</span>
+                                        </div>
+
+                                        <div class="timer-section timer-section-desk">
+                                            <div class="hours-block">
+                                                <span class="hoursRetro num num-desk">00</span>
+                                            </div>
+                                            <span class="uncorrectHoursRetro text_num text_num-desk">с.</span>
+                                        </div>
+
+                                        <div class="timer-section timer-section-desk">
+                                            <div class="minutes-block">
+                                                <span class="minutesRetro num num-desk">00</span>
+                                            </div>
+                                            <span class="uncorrectMinutesRetro text_num text_num-desk">м.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs">
+                        <a href="javascript:void(0)" class="tablinks tab2">
+                            <p>Драйв</p>
+                        </a>
+                        <a href="javascript:void(0)" class="tablinks tab3">
+                            <p>Рейтинг</p>
+                        </a>
+                        <a href="javascript:void(0)" class="tablinks tab4">
+                            <p>лотоГАРАЖ</p>
+                        </a>
+                        <a href="javascript:void(0)" class="tablinks tab5">
+                            <p>ПИТ-СТОП</p>
+                        </a>
+                    </div>
+
+                    <div class="container">
+                        <div class="icons">
+                            <img src="https://static.sz.kz/landings/lotoDriveRetro/img/terms-icon.svg" alt="" class="terms-icon">
+                            <a href="https://static.sz.kz/landings/lotoDriveRetro/docs/LotoDrive-Classic-ru.pdf" class="rules" target="_blank">науқан шарттары</a>
+                            <img src="https://static.sz.kz/landings/lotoDriveRetro/img/prize-icon.svg" alt="" class="prize-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="drive tabcontent" id="tabcontent2">
+            <div class="container">
+                <div class="head-block">
+                    <a href="javascript:void(0)" class="backBtn">
+                        <img src="https://static.sz.kz/landings/lotoDriveRetro/img/back.svg" alt="">
+                    </a>
+                    <h1>Драйв</h1>
+                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/hb-after.svg" alt="" class="hbAfter">
+                </div>
+
+                <div class="wrapperRace">
+                    <div class="raceCars-block">
+                        <div class="raceCars">
+                            <div class="raceCar raceCar1">
+                                <div class="sliderCar1"></div>
+                                <div class="winners">
+                                    <img src="https://static.sz.kz/landings/lotoDriveForsazh/img/prize2.svg" alt="">
+                                    <div class="carsNick">
+                                        <p class="nickCar1">123</p>
+                                        <p class="scoreCar1" id="scoreCar1ID">000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="raceCar raceCar0">
+                                <div class="sliderCar0"></div>
+                                <div class="winners">
+                                    <img src="https://static.sz.kz/landings/lotoDriveForsazh/img/prize1.svg" alt="">
+                                    <div class="carsNick">
+                                        <p class="nickCar0">123</p>
+                                        <p class="scoreCar0" id="scoreCar0ID">000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="raceCar raceCar2">
+                                <div class="sliderCar2"></div>
+                                <div class="winners">
+                                    <img src="https://static.sz.kz/landings/lotoDriveForsazh/img/prize3.svg" alt="">
+                                    <div class="carsNick">
+                                        <p class="nickCar2">123</p>
+                                        <p class="scoreCar2" id="scoreCar2ID">000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reiting tabcontent" id="tabcontent3">
+            <div class="container">
+                <div class="head-block">
+                    <a href="javascript:void(0)" class="backBtn">
+                        <img src="https://static.sz.kz/landings/lotoDriveRetro/img/back.svg" alt="">
+                    </a>
+                    <h1>Рейтинг</h1>
+                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/hb-after.svg" alt="" class="hbAfter">
+
+                </div>
+
+                <div class="reiting-content">
+                    <div class="swiper-container swiperContainerReiting">
+                        <div class="swiper-wrapper wrapperReeiting">
+                            <div class="swiper-slide swiperSlide1"></div>
+                        </div>
+                    </div>
+                    <div class="wrapper-myPlace"></div>
+
+
+                    <div class="swiperBtn">
+                        <div class="swiper-pagination swiper-paginationReitng"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="games tabcontent" id="tabcontent4">
+            <div class="container">
+                <div class="head-block">
+                    <a href="javascript:void(0)" class="backBtn">
+                        <img src="https://static.sz.kz/landings/lotoDriveRetro/img/back.svg" alt="">
+                    </a>
+                    <h1>лотоГАРАЖ</h1>
+                </div>
+            </div>
+
+            <div class="games-blocks">
+                <div class="container">
+                    <div class="first-block">
+                        <div class="swiper car-img">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/blueCarGame.png" srcset="https://static.sz.kz/landings/lotoDriveRetro/img/blueCarGame-2x.png 2x" alt="tb">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/yellowCarGame.png" srcset="https://static.sz.kz/landings/lotoDriveRetro/img/yellowCarGame-2x.png 2x" alt="6/49">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/blackCarGame.png" srcset="https://static.sz.kz/landings/lotoDriveRetro/img/blackCarGame-2x.png 2x" alt="5/36">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/black2CarGame.png" srcset="https://static.sz.kz/landings/lotoDriveRetro/img/black2CarGame-2x.png 2x" alt="777">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/whiteCarGame.png" srcset="https://static.sz.kz/landings/lotoDriveRetro/img/whiteCarGame-2x.png 2x" alt="keno">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/brownCarGame.png" srcset="https://static.sz.kz/landings/lotoDriveRetro/img/brownCarGame-2x.png 2x" alt="keno2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second-block">
+                    <div class="container">
+                        <div class="swiper game-block">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/tb.svg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/649.svg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/536.svg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/777.svg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/keno.svg" alt="">
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/keno2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                        <a href="https://sz.kz/game?gameid=1045" class="landing-btn btn-buy">Билет сатып алу | 500 ₸-ден</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq tabcontent" id="tabcontent5">
+            <div class="container">
+                <div class="head-block">
+                    <a href="javascript:void(0)" class="backBtn">
+                        <img src="https://static.sz.kz/landings/lotoDriveRetro/img/back.svg" alt="">
+                    </a>
+                    <h1>ПИТ-СТОП</h1>
+                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/hb-after.svg" alt="" class="hbAfter">
+
+                </div>
+
+                <div class="faq-block">
+                    <h2>Жиі қойылатын сұрақтар</h2>
+                    <div class="accordion">
+                        <p class="accordion__text">«LotoDrive Classic» ДЕГЕНІМІЗ НЕ?</p>
+                        <div class="accordion__body">
+                            <p>
+                                «LotoDrive Classic» - бұл жылдам тиражды лотереялардың барлық жанкүйерлеріне арналған науқан.
+                            </p> <br>
+                            <p> 777, KENO, KENO2, LOTO 6/49, 5/36 және TeleBingo билеттерін сатып алыңыз, ұтыстар үшін рейтингтік ұпайларды алыңыз. Жүлде қоры ең көп ұпай жинаған 100 қатысушы арасында бөлінеді.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion__text">«LotoDrive Classic» НАУҚАНЫ ТУРАЛЫ</p>
+                        <div class="accordion__body">
+                            <p class="podZagolovok">
+                                «LotoDrive Classic» науқанының ұйымдастырушысы кім?
+                            </p>
+                            <ul>
+                                <li>Науқан ұйымдастырушысы: «Сәтті Жұлдыз» АҚ. Мекенжайы: Алматы қ., Жетісу ауданы, Нұрсұлтан Назарбаев даңғылы, 28</li>
+                            </ul> <br>
+                            <p class="podZagolovok">Науқанға кім қатыса алады?</p>
+                            <ul>
+                                <li><a href="https://sz.kz" target="_blank">sz.kz</a> сайтында жеке кабинетін тіркеген, кәмелет жасқа толған тұлғалар</li>
+                            </ul> <br>
+                            <p class="podZagolovok">Науқанның өту мерзімі қандай?</p>
+                            <ul>
+                                <li> Науқан өтетін мерзім: 21.07.2023 10:01 (Астаны уақыты) 31.07.2023 23:59 дейін</li>
+                            </ul> <br>
+                            <p class="podZagolovok">Науқанға қалай қатысуға болады?</p>
+                            <ul>
+                                <li>
+                                    <a href="https://sz.kz" target="_blank">sz.kz</a> сайтында тіркеліңіз, науқан қатысушысының профилі бар парақшаға өтіп, «Никнеймді» таңдаңыз (Науқан кезеңінде қатысушы қолданатын жалған виртуалды және бірегей есім).
+                                </li>
+
+                                <li>Науқанның шарттарымен танысу</li>
+
+                                <li>Науқанның өткізілу кезеңінде 4/20 Express, 6/49 Express, 12/24 Express, 5/36 Express, жылдам тиражды лотерея билеттерін сатып алып, https://sz.kz/lotodrive-Classic арнайы парақшасында рейтингті бақылау
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion__text">«LotoDrive Classic» НАУҚАН ҚАТЫСУШЫЛАРЫНА</p>
+                        <div class="accordion__body">
+                            <p class="podZagolovok">
+                                «Рейтинг ұпайлары» дегеніміз не?
+                            </p>
+                            <ul>
+                                <li>Рейтинг ұпайлары - 777, KENO, KENO2, LOTO 6/49, 5/36 және TeleBingo лотереяларын сатып алғаны және ұтыстар үшін сыйақы
+                                </li>
+                            </ul>
+                            <p class="podZagolovok">
+                                Рейтинг дегеніміз не?
+                            </p>
+                            <ul>
+                                <li>
+                                    «Рейтинг» - нақты уақыт режимінде 15 минуттық интервалмен өзгеретін науқанға қатысушының сандық көрсеткіші
+                                </li>
+                            </ul>
+
+                            <p class="podZagolovok">
+                                Рейтинг қалай есептеледі?
+                            </p>
+                            <ul>
+                                <li>
+                                    Рейтинг билеттердің ұтыс сомасы ретінде есептеледі. 1 рейтинг ұпайы = 100 теңге.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <p class="accordion__text">«LotoDrive Classic» НАУҚАНЫНЫҢ ЖҮЛДЕ ҚОРЫ</p>
+                        <div class="accordion__body">
+                            <p class="podZagolovok">Науқанның Жүлде қоры қандай?</p>
+                            <p>Науқанның жүлде қоры негізгі ЖҚ және жинақтаушы ЖҚ тұрады.</p>
+                            <p>Негізгі жүлде қоры (НЖҚ): 1&nbsp;миллион&nbsp;теңге + 1&nbsp;миллион&nbsp;бонус + 100&nbsp;Гауһар&nbsp;лотобокс</p>
+                            <p>Жинақтаушы жүлде қоры (ЖЖҚ): Акцияны өткізу кезеңінде 4/20 Express, 6/49&nbsp;Express, 12/24&nbsp;Express, 5/36&nbsp;Express лотереялардағы ұтыстар сомасының 2%</p>
+                            <br>
+                            <ul>
+                                <li><span>1 орын: 1&nbsp;жүлде - 300&nbsp;000&nbsp;теңге + 15%&nbsp;ЖЖҚ</span></li>
+                                <li><span>2 орын: 1&nbsp;жүлде - 250&nbsp;000&nbsp;теңге + 12.5%&nbsp;ЖЖҚ</span></li>
+                                <li><span>3 орын: 1&nbsp;жүлде - 200&nbsp;000&nbsp;теңге + 10%&nbsp;ЖЖҚ</span></li>
+                                <li><span>4 орын: 1&nbsp;жүлде - 150&nbsp;000&nbsp;теңге + 7.5%&nbsp;ЖЖҚ</span></li>
+                                <li><span>5 орын: 1&nbsp;жүлде - 100&nbsp;000&nbsp;теңге + 5%&nbsp;ЖЖҚ</span></li>
+                                <li>6-10 орындар: 75&nbsp;000&nbsp;бонустан 5&nbsp;жүлде + 20%&nbsp;ЖЖҚ</li>
+                                <li>11-25 орындар 30&nbsp;000&nbsp;бонустан 15&nbsp;жүлде + 17%&nbsp;ЖЖҚ</li>
+                                <li>26-50 орындар 10&nbsp;000&nbsp;бонустан 25&nbsp;жүлде + 13%&nbsp;ЖЖҚ</li>
+                                <li>51-100 орындар 2 Гауhар лотобокстан 50&nbsp;жүлде</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <p class="accordion__text">«LotoDrive Classic» НАУҚАНЫНЫҢ ЖЕҢІМПАЗДАРЫ</p>
+                        <div class="accordion__body">
+                            <p class="podZagolovok">
+                                Науқан жеңімпаздары қалай анықталады?
+                            </p>
+                            <ul>
+                                <li>Жеңімпаздар науқан аяқталғаннан кейін, басқалардан бұрын науқанның барлық шарттарын орындаған барлық қатысушылардың арасында рейтингтік ұпайларды есептеу арқылы анықталады</li>
+                            </ul>
+                            <p class="podZagolovok">Жеңімпаздар тізімімен қайда және қашан танысуға болады?</p>
+                            <ul>
+                                <li>
+                                    Науқан нәтижелері 2023 жылдың 18 шілдесіне дейін https://sz.kz/lotodrive-Classic сайтында орналастырылады, Жеңімпаздың жасырылған телефон нөмірін (мысалы, 7 701 9** *3 83) көрсететін жеңімпаздар тізімі, соңғы ұпайлар есептелу күні мен уақытын (Астана
+                                    қаласы) көрсететін рейтингтік позициялар түрінде жарияланады
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion__text">«LotoDrive Classic» НАУҚАНЫНЫҢ ЖЕҢІМПАЗДАРЫН МАРАПАТТАУ ТУРАЛЫ</p>
+                        <div class="accordion__body">
+                            <p class="podZagolovok">Ақшалай жүлдені қалай алуға болады?</p>
+                            <ul>
+                                <li>Ақшалай жүлденің жеңімпазы жүлдені алу мүмкіндігі туралы хабарлама алған сәттен бастап 30 күнтізбелік күннен кешіктірмей Науқанды ұйымдастырушының жақын жердегі кеңсесінде өз жүлдесін ресімдеп, ала алады.</li>
+                            </ul>
+                            <p class="podZagolovok">Алынған ақшалай жұлде үшін салық төлеу керек пе?</p>
+                            <ul>
+                                <li>ҚР салық заңнамасына сәйкес АЕК-тің 6 еселенген мөлшерінен асатын ұтыстарға төлем көзінен жеке табыс салығы салынады. Табыс салығын төлеу ҚР қолданыстағы Салық кодексіне сәйкес ұтысты алған кезде Лотереяға Қатысушының ұтысының
+                                    сомасынан салық сомасын ұстау түрінде жүзеге асырылады. Жоғарыда аталған салықтың мөлшерлемелері: ҚР резиденттері үшін – 10%; ҚР бейрезиденттері үшін – 20% (жиырма).</li>
+                            </ul>
+                            <p class="podZagolovok">Когда и&nbsp;как будут зачислены бонусы победителям по&nbsp;окончанию акции?
+                            </p>
+                            <ul>
+                                <li>Бонусы победителем начисляются Организатор акции в&nbsp;течение 5&nbsp;рабочих дней с&nbsp;момента публикации итогов на&nbsp;личный кошелек победителя, и&nbsp;только один раз по&nbsp;результатам акции.
+                                    <br> 1&nbsp;бонус = 1&nbsp;теңге;
+                                    <br>Бонустар есептелген күннен бастап 30 күн ішінде жарамды.
+                                </li>
+                            </ul>
+                            <p class="podZagolovok">Науқанның соңында жеңімпаздарға бонустар қашан және қалай аударылады?</p>
+                            <ul>
+                                <li>Лотобокстарды Науқанды Ұйымдастырушы жеңімпаздың жеке кабинетінде нәтижелер жарияланған күннен бастап 5 жұмыс күні ішінде және науқан нәтижелері бойынша бір рет қана есептейді.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="terms">
+            <div class="terms-blocks">
+                <div class="container">
+                    <div class="close-icon"></div>
+                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/logo2.png" alt="" class="terms-logo">
+
+                    <div class="terms-text">
+                        <div class="terms-block">
+                            <div class="terms-block__item">
+                                <img src="https://static.sz.kz/landings/lotoDriveRetro/img/tenge.svg" alt="">
+                                <h3>Сатып алыңыз</h3>
+                                <p>классикалық лотерия билеттерін сатып алыңыз</p>
+
+                            </div>
+                        </div>
+
+                        <div class="terms-block block2">
+                            <div class="terms-block__item">
+                                <img src="https://static.sz.kz/landings/lotoDriveRetro/img/star.svg" alt="">
+                                <h3>Алыңыз</h3>
+                                <p>ұтыстар және сатып алғаныңыз үшін рейтинг ұпайларын алыңыз</p>
+
+                            </div>
+                        </div>
+
+                        <div class="terms-block">
+                            <div class="terms-block__item">
+                                <img src="https://static.sz.kz/landings/lotoDriveRetro/img/cup.svg" alt="">
+                                <h3>Ұтыңыз</h3>
+                                <p>Науқанның жүлде қоры 100 жеңімпаз арасында бөлінеді</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prizes">
+            <div class="prizes-blocks">
+                <div class="container">
+                    <div class="close-icon"></div>
+                    <img src="https://static.sz.kz/landings/lotoDriveRetro/img/logo2.png" alt="" class="terms-logo">
+
+                    <h2>LOTO&nbsp;DRIVE нәтижелері бойынша жүлделер</h2>
+                    <p class="text">Жүлде қоры топ 100 қатысушы арасында бөлінеді</p>
+
+                    <div class="prizes-all">
+                        <div class="prizes-sum">
+                            <p class="place place1">Орын</p>
+                            <p class="numbers-cat">Жеңімпаздар</p>
+                            <p class="namePrize">Жүлде</p>
+                        </div>
+
+                        <div class="prizes-sum prizesSum5">
+                            <p class="place">1 орын</p>
+                            <p>1</p>
+                            <p class="tenge increase" id="first">300 000</p>
+                        </div>
+
+                        <div class="prizes-sum prizesSum5">
+                            <p class="place">2 орын</p>
+                            <p>1</p>
+                            <p class="tenge increase" id="second">250 000</p>
+                        </div>
+
+                        <div class="prizes-sum prizesSum5">
+                            <p class="place">3 орын</p>
+                            <p>1</p>
+                            <p class="tenge increase" id="third">200 000</p>
+                        </div>
+
+                        <div class="prizes-sum prizesSum5">
+                            <p class="place">4 орын</p>
+                            <p>1</p>
+                            <p class="tenge increase" id="fourth">150 000</p>
+                        </div>
+
+                        <div class="prizes-sum prizesSum5">
+                            <p class="place">5 орын</p>
+                            <p>1</p>
+                            <p class="tenge increase" id="fifth">100 000</p>
+                        </div>
+
+                        <div class="prizes-sum">
+                            <p class="place">6-10 орын</p>
+                            <p>5</p>
+                            <p class="bonus increase" id="sixTen">75 000</p>
+                        </div>
+
+                        <div class="prizes-sum">
+                            <p class="place">11-25 орын</p>
+                            <p>15</p>
+                            <p class="bonus increase" id="eleven25">30 000</p>
+                        </div>
+
+                        <div class="prizes-sum">
+                            <p class="place">26-50 орын</p>
+                            <p>25</p>
+                            <p class="bonus increase" id="twentySix50">10 000</p>
+                        </div>
+
+                        <div class="prizes-sum">
+                            <p class="place">51-100 орын</p>
+                            <p>50</p>
+                            <p class="increase" id="fiftyOne100">2 Гауhар лотобокс</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://static.sz.kz/landings/ExpressTest/script/nouislider.min.js?V3" defer></script>
+    <script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
